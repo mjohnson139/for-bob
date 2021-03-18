@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-import ControlledCarousel from "./components/carousel/Carousel";
 import EagleHome from "./components/eaglehome/EagleHome";
 import EagleBehavior from "./components/eaglebehavior/EagleBehavior";
 import EagleDiet from "./components/eaglediet/EagleDiet";
@@ -14,8 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
-      <div className="App">
-        <ControlledCarousel />
+      <div className="App">        
         <Switch>
           <Route exact path="/" component={EagleHome} />
           <Route path="/eaglehome" component={EagleHome} />
